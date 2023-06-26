@@ -698,7 +698,7 @@ func (a *DefaultApiService) CreatePullRequest(projectKey, repositorySlug string,
 /*
 	DefaultApiService
 
-Update the title, description, reviewers or destination branch of an existing pull request.  &lt;p&gt;  &lt;strong&gt;Note:&lt;/strong&gt; the &lt;em&gt;reviewers&lt;/em&gt; list may be updated using this resource. However the  &lt;em&gt;author&lt;/em&gt; and &lt;em&gt;participants&lt;/em&gt; list may not.  &lt;p&gt;  The authenticated user must either:  &lt;ul&gt;      &lt;li&gt;be the author of the pull request and have the &lt;strong&gt;REPO_READ&lt;/strong&gt; permission for the repository      that this pull request targets; or&lt;/li&gt;      &lt;li&gt;have the &lt;strong&gt;REPO_WRITE&lt;/strong&gt; permission for the repository that this pull request targets&lt;/li&gt;  &lt;/ul&gt;  to call this resource.
+Update the title, description, state or destination branch of an existing pull request.  &lt;p&gt;  &lt;strong&gt;Note:&lt;/strong&gt; the &lt;em&gt;reviewers&lt;/em&gt; list may be updated using this resource. However the  &lt;em&gt;author&lt;/em&gt; and &lt;em&gt;participants&lt;/em&gt; list may not.  &lt;p&gt;  The authenticated user must either:  &lt;ul&gt;      &lt;li&gt;be the author of the pull request and have the &lt;strong&gt;REPO_READ&lt;/strong&gt; permission for the repository      that this pull request targets; or&lt;/li&gt;      &lt;li&gt;have the &lt;strong&gt;REPO_WRITE&lt;/strong&gt; permission for the repository that this pull request targets&lt;/li&gt;  &lt;/ul&gt;  to call this resource.
 
 @param pullRequestId the ID of the pull request within the repository
 @return
@@ -7617,7 +7617,7 @@ func (a *DefaultApiService) GetRootLevel() (*APIResponse, error) {
 /*
 	DefaultApiService
 
-# Retrieves the server email address
+Retrieves the server email address
 
 @return
 */
